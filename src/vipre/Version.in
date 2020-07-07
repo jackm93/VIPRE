@@ -1,0 +1,36 @@
+//
+//  Version.hpp
+//  vipre
+//
+//  Created by Christian Noon on 12/2/11.
+//  Copyright (c) 2011 Christian Noon. All rights reserved.
+//
+
+#ifndef VIPRE_VERSION_HPP
+#define VIPRE_VERSION_HPP
+
+#include <vipre/Export.hpp>
+#include <vipre/String.hpp>
+
+#define VIPRE_MAJOR_VERSION    @VIPRE_MAJOR_VERSION@
+#define VIPRE_MINOR_VERSION    @VIPRE_MINOR_VERSION@
+#define VIPRE_PATCH_VERSION    @VIPRE_PATCH_VERSION@
+#define VIPRE_SOVERSION        @VIPRE_SOVERSION@
+
+namespace vipre {
+
+/**
+ * Returns the library version number.
+ * Numbering convention: VIPRE-1.0.2 will return 1.0.2 from vipreGetVersion.
+ */
+extern VIPRE_EXPORT String vipreGetVersion();
+
+/** Returns the vipre shared object version number. */
+extern VIPRE_EXPORT String vipreGetSOVersion();
+
+/** Returns the library name in human-friendly form. */
+extern VIPRE_EXPORT String vipreGetLibraryName();
+
+}	// End of vipre namespace
+
+#endif  // End of VIPRE_VERSION_HPP

@@ -1,0 +1,17 @@
+Point CMake at the source dir where you decompressed VIPRE.
+
+Help Cmake find your install of dcmtk, boost and OSG.
+Qt is optional.
+
+Minimum required versions:
+Boost 1.47 or greater
+Dcmtk 3.6.0 or greater
+OSG 3.0.1 or greater
+Qt 4.7.4 or greater
+
+Configure, generate your build files.
+
+Build VIPRE.
+
+For more specific instructions on how to build each dependency library on
+a specific OS, please refer to the VIPRE wiki on Github.

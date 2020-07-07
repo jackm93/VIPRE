@@ -1,0 +1,47 @@
+# Ignore all DS_Store files
+.DS_Store
+
+# Ignore files for linux eclipse development
+.cproject
+.project
+*~
+*.cmake
+*.make
+*.o
+*.so
+a.out
+cmake.check_cache
+CMakeCache.txt
+CMakeCCompilerId.c
+CMakeCXXCompilerId.cpp
+CMakeError.log
+CMakeDetermineCompilerABI_C.bin
+CMakeDetermineCompilerABI_CXX.bin
+CMakeOutput.log
+CMakeRuleHashes.txt
+CXX.includecache
+depend.internal
+install_manifest.txt
+link.txt
+Makefile*
+moc_*
+progress.marks
+TargetDirectories.txt
+ui_*
+
+# Ignore anything with cnoon in it
+*cnoon*
+
+# Ignore some of the possible CMake build directories
+*build*
+
+# Ignore any textmate and xcode projects
+*tmproj
+*xcodeproj
+
+# Ignore the custom version configuration files
+include/vipre/Version.hpp
+include/vipreDICOM/Version.hpp
+*.db
+*.ipch
+*.opendb

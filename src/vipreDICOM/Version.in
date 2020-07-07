@@ -1,0 +1,36 @@
+//
+//  Version.hpp
+//  vipreDICOM
+//
+//  Created by Christian Noon on 12/13/11.
+//  Copyright (c) 2011 Christian Noon. All rights reserved.
+//
+
+#ifndef VIPREDICOM_VERSION_HPP
+#define VIPREDICOM_VERSION_HPP
+
+#include <vipre/String.hpp>
+#include <vipreDICOM/Export.hpp>
+
+#define VIPREDICOM_MAJOR_VERSION    @VIPRE_MAJOR_VERSION@
+#define VIPREDICOM_MINOR_VERSION    @VIPRE_MINOR_VERSION@
+#define VIPREDICOM_PATCH_VERSION    @VIPRE_PATCH_VERSION@
+#define VIPREDICOM_SOVERSION        @VIPRE_SOVERSION@
+
+namespace vipreDICOM {
+
+/**
+ * Returns the library version number.
+ * Numbering convention: VIPRE-1.0.2 will return 1.0.2 from vipreDICOMGetVersion.
+ */
+extern VIPREDICOM_EXPORT vipre::String vipreDICOMGetVersion();
+
+/** Returns the shared object version number. */
+extern VIPREDICOM_EXPORT vipre::String vipreDICOMGetSOVersion();
+
+/** Returns the library name in human-friendly form. */
+extern VIPREDICOM_EXPORT vipre::String vipreDICOMGetLibraryName();
+
+}	// End of vipreDICOM namespace
+
+#endif  // End of VIPREDICOM_VERSION_HPP
